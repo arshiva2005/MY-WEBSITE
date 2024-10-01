@@ -1,0 +1,53 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4; /* Soft grey background */
+    color: #333;
+}
+
+/* Header styling for "About Us" */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Card container for content */
+.card {
+    background-color: #fff; /* White background for the card */
+    padding: 40px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 800px;
+    margin: 0 auto; /* Center the card */
+    border-radius: 10px;
+    text-align: left; /* Left align the content */
+}
+
+/* Paragraph styling inside the card */
+.card p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .card {
+        padding: 20px;
+    }
+    .card p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,94 @@
+/* Navigation menu styling */
+nav {
+    background-color: rgba(0, 187, 255, 0.8);
+    padding: 15px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu .nav-link {
+    margin: 0 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.menu .nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Container for the Jammu content */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Heading for sections */
+.container h1, .container h2 {
+    margin-bottom: 20px;
+}
+
+/* Card container for places and hotels */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Styling for place and hotel cards */
+.place-card, .hotel-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.place-card:hover, .hotel-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.place-card img, .hotel-card img {
+    width: 100%; /* Make image fill the card */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.place-card h3, .hotel-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.place-card p, .hotel-card p {
+    padding: 0 15px 15px; /* Padding for description */
+}
+
+/* Scrollable hotel section */
+.hotel-scrollable {
+    overflow-x: auto; /* Horizontal scroll for hotels */
+    padding: 20px 0; /* Spacing around the scrollable area */
+}
+
+.hotel-scrollable .card-container {
+    display: flex; /* Keep hotels in a row */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Stack cards on small screens */
+        align-items: center;
+    }
+
+    .place-card, .hotel-card {
+        width: 80%; /* Full width on small screens */
+    }
+}

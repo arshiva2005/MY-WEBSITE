@@ -1,0 +1,47 @@
+/* General styles for the container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+div{
+    background-color: beige;
+    background-size: cover;
+    height: 100%;
+    width: 40%;
+}
+
+/* Heading styles */
+h1, h2 {
+    color: #333;
+}
+
+/* List styles */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Blockquote styles */
+blockquote {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-left: 5px solid #ff5722;
+    margin: 20px 0;
+}
+
+/* Footer styles in blockquote */
+footer {
+    text-align: right;
+    font-style: italic;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+}

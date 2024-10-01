@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+nav {
+    background-color: rgba(0, 187, 255, 0.8);
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu .nav-link {
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.menu .nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Container for destination cards */
+.container {
+    width: 90%;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+/* Main heading */
+.container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* Destination cards layout */
+.destination-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    justify-content: space-around; /* Space between cards */
+}
+
+.destination-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: 300px; /* Fixed width for each card */
+    text-align: center;
+}
+
+.destination-card img {
+    width: 100%;
+    max-height: 200px; /* Limit height to maintain uniformity */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.destination-card h2 {
+    font-size: 1.8rem;
+    color: #ff5722;
+    margin-bottom: 10px;
+}
+
+.destination-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .destination-card {
+        width: 90%; /* Full width on smaller screens */
+        margin: 10px auto; /* Center cards */
+    }
+
+    .destination-card img {
+        max-height: 150px; /* Reduce image height on smaller screens */
+    }
+
+    .destination-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .destination-card p {
+        font-size: 0.9rem;
+    }
+}
