@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Practical</title>
+</head>
+<body>
+<p id="para">Hello</p>
+</body>
+<script>
+let paragraph=document.getElementById("para");
+let isGrowing=true;
+let fontSize=50;
+function fontChange(){
+if(is Growing){
+fontSize = fontSize + 2;
+paragraph.style.fontSize = fontSize + 'px';
+if(fontSize>200) isGrowing = false;
+}
+else
+{
+fontSize = fontSize - 2;
+paragraph.style.fontSize = fontSize + 'px';
+if(fontSize<50) isGrowing = true;
+}
+}
+setInterval(fontChange,0.1);
+</script>
+</html>
+
+
+
+
