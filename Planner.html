@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include necessary metadata, styles, and API link -->
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Itinerary Planner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAj7k_Y-gdWz7DO9xnFspUwC66dugh1glk&libraries=places&callback=initializeApp"></script>
+</head>
+<body>
+
+	<div id="banner">
+        <h1>Travel Itinerary Planner</h1>
+    </div>
+	
+	<div class="flex-container">
+		
+        <!-- Left Section -->
+        <div class="left-section">
+            <form id="location-form">
+                <div class="input-group">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <label for="location">Enter Location:</label>
+                    <input type="text" id="location" placeholder="e.g., London" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <label for="days">Number of Days:</label>
+                    <input type="number" id="days" placeholder="e.g., 3" min="1" required>
+                </div>
+                <button type="submit">Generate Itinerary</button>
+            </form>
+            <h2 id="iti-text" style="text-align: center; display: none;">Itinerary</h2>
+            <ul id="itinerary-list"></ul>
+			
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+			<div id="map" class="map-container"></div>
+			<div id="street-view" style="display: none;"></div>
+
+            <!-- Weather Container -->
+            <div id="weather-section" class="weather-container" style="display: none;">
+                <h2>Weather Information</h2>
+                <p id="weather-details" class="weather-info"></p>
+            </div>
+			
+			<div id="flight-section" class="weather-container" style="display: none;">
+				<h2>Flight Information</h2>
+				<p id="flight-details" class="weather-info"><i class="fa fa-plane" aria-hidden="true"></i> </p>
+			</div>
+        </div>
+    </div>
+	<span class="bottom-align">&copy Arshiva Verma, CSE, GCET</span>
+
+    <script src="script.js"></script>
+</body>
+</html>
